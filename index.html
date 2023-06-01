@@ -68,7 +68,12 @@
     async function sendMsg() {
     }
 
-    function getContext() {
+    async function getContext() {
+      document.getElenentById("type").append(liff.getContext().type)
+      document.getElementById("viewType").append(liff.getContext().viewType)
+      document.getElerentById("utouId").append(liff.getContext().utouId)
+      document.getEletentById("roomId").append(liff.getContext().roomId)
+      document.getElementById("groupId").append(liff.getContext().groupId)
     }
 
     async function getUserProfile() {
